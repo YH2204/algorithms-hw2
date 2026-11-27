@@ -132,6 +132,30 @@ class TestHashTableCommonBehavior(unittest.TestCase):
         for key in colliding_keys:
             self.assertEqual(table.get(key), key.upper())
 
+    def test_chaining_delete_middle_collision_preserves_other_keys(self):
+        table = ChainingHashTable()
+        colliding_keys = keys_for_bucket(3, 3)
+        for key in colliding_keys:
+            table.put(key, key.upper())
+
+        table.delete(colliding_keys[1])
+
+        self.assertEqual(table.get(colliding_keys[0]), colliding_keys[0].upper())
+        self.assertEqual(table.get(colliding_keys[2]), colliding_keys[2].upper())
+        self.assertNotIn(colliding_keys[1], table)
+
+    def test_chaining_find_in_empty_bucket_has_zero_cost(self):
+        table = ChainingHashTable()
+        stored_key = keys_for_bucket(1, 1)[0]
+        missing_key = keys_for_bucket(0, 1)[0]
+        table.put(stored_key, "value")
+
+        found, value, cost = table.find(missing_key)
+
+        self.assertFalse(found)
+        self.assertIsNone(value)
+        self.assertEqual(cost, 0)
+
     def test_linear_probing_wraps_from_last_slot_to_zero(self):
         table = LinearProbingHashTable(max_load=None)
         keys = keys_for_bucket(15, 2)
@@ -158,6 +182,18 @@ class TestHashTableCommonBehavior(unittest.TestCase):
         self.assertEqual(value, "second")
         self.assertEqual(cost, 2)
 
+    def test_linear_probing_can_reinsert_a_deleted_key(self):
+        table = LinearProbingHashTable(max_load=None)
+        keys = keys_for_bucket(7, 2)
+        table.put(keys[0], "before")
+        table.put(keys[1], "neighbor")
+
+        table.delete(keys[0])
+        table.put(keys[0], "after")
+
+        self.assertEqual(table.get(keys[0]), "after")
+        self.assertEqual(table.get(keys[1]), "neighbor")
+
     def test_linear_probing_growth_preserves_entries(self):
         table = LinearProbingHashTable()
         for index in range(9):
@@ -179,6 +215,13 @@ class TestHashTableCommonBehavior(unittest.TestCase):
         self.assertEqual(table.get("key-0"), "updated")
         with self.assertRaises(OverflowError):
             table.put("new-key", "value")
+
+    def test_full_fixed_linear_table_get_for_missing_key_terminates(self):
+        table = LinearProbingHashTable(max_load=None)
+        for index in range(16):
+            table.put(f"key-{index}", str(index))
+
+        self.assertIsNone(table.get("missing-key"))
 
 
 if __name__ == "__main__":

@@ -39,6 +39,14 @@ class TestShortener(unittest.TestCase):
                     "https://example.com/path",
                 )
 
+    def test_http_urls_are_accepted(self):
+        for table_type in TABLE_TYPES:
+            with self.subTest(table=table_type):
+                shortener = Shortener(table_type=table_type)
+                code = shortener.shorten("http://example.com/path")
+
+                self.assertEqual(shortener.expand(code), "http://example.com/path")
+
     def test_expand_returns_none_for_unknown_code(self):
         for table_type in TABLE_TYPES:
             with self.subTest(table=table_type):
@@ -90,6 +98,19 @@ class TestShortener(unittest.TestCase):
                 self.assertEqual(len(set(codes)), len(codes))
                 for url, code in zip(urls, codes):
                     self.assertEqual(shortener.expand(code), url)
+
+    def test_sixty_second_url_uses_base62_code_10(self):
+        for table_type in TABLE_TYPES:
+            with self.subTest(table=table_type):
+                shortener = Shortener(table_type=table_type)
+                code = None
+
+                for index in range(1, 63):
+                    code = shortener.shorten(
+                        f"https://example.com/path/{index}"
+                    )
+
+                self.assertEqual(code, "10")
 
 
 if __name__ == "__main__":
