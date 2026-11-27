@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+<title>Chaining hash table probe counts</title>
+<desc>Measured average node comparisons and theoretical estimates by load factor.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="480" y="28" text-anchor="middle" font-family="sans-serif" font-size="20">Chaining: measured vs theoretical probe counts</text>
+<line x1="82" y1="484.00" x2="930" y2="484.00" stroke="#dddddd"/>
+<text x="70" y="489.00" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<line x1="82" y1="398.20" x2="930" y2="398.20" stroke="#dddddd"/>
+<text x="70" y="403.20" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<line x1="82" y1="312.40" x2="930" y2="312.40" stroke="#dddddd"/>
+<text x="70" y="317.40" text-anchor="end" font-family="sans-serif" font-size="12">2</text>
+<line x1="82" y1="226.60" x2="930" y2="226.60" stroke="#dddddd"/>
+<text x="70" y="231.60" text-anchor="end" font-family="sans-serif" font-size="12">3</text>
+<line x1="82" y1="140.80" x2="930" y2="140.80" stroke="#dddddd"/>
+<text x="70" y="145.80" text-anchor="end" font-family="sans-serif" font-size="12">4</text>
+<line x1="82" y1="55.00" x2="930" y2="55.00" stroke="#dddddd"/>
+<text x="70" y="60.00" text-anchor="end" font-family="sans-serif" font-size="12">5</text>
+<line x1="82.00" y1="55" x2="82.00" y2="484" stroke="#eeeeee"/>
+<text x="82.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<line x1="188.00" y1="55" x2="188.00" y2="484" stroke="#eeeeee"/>
+<text x="188.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">0.5</text>
+<line x1="294.00" y1="55" x2="294.00" y2="484" stroke="#eeeeee"/>
+<text x="294.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<line x1="400.00" y1="55" x2="400.00" y2="484" stroke="#eeeeee"/>
+<text x="400.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">1.5</text>
+<line x1="506.00" y1="55" x2="506.00" y2="484" stroke="#eeeeee"/>
+<text x="506.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<line x1="612.00" y1="55" x2="612.00" y2="484" stroke="#eeeeee"/>
+<text x="612.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">2.5</text>
+<line x1="718.00" y1="55" x2="718.00" y2="484" stroke="#eeeeee"/>
+<text x="718.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<line x1="824.00" y1="55" x2="824.00" y2="484" stroke="#eeeeee"/>
+<text x="824.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">3.5</text>
+<line x1="930.00" y1="55" x2="930.00" y2="484" stroke="#eeeeee"/>
+<text x="930.00" y="506" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<line x1="82" y1="55" x2="82" y2="484" stroke="#333"/>
+<line x1="82" y1="484" x2="930" y2="484" stroke="#333"/>
+<text x="506.00" y="542" text-anchor="middle" font-family="sans-serif" font-size="14">Load factor (α)</text>
+<text x="20" y="269.50" transform="rotate(-90 20 269.50)" text-anchor="middle" font-family="sans-serif" font-size="14">Average node comparisons</text>
+<polyline points="134.99,385.20 187.97,377.74 241.01,364.77 294.00,355.52 346.99,344.20 400.03,334.24 453.01,323.68 506.00,312.24 558.99,300.80 611.97,289.61 665.01,279.84 718.00,267.41 770.99,259.57 824.03,248.51 877.01,237.00 930.00,228.06" fill="none" stroke="#1769aa" stroke-width="2.5"/>
+<line x1="100" y1="73" x2="130" y2="73" stroke="#1769aa" stroke-width="2.5"/>
+<text x="137" y="77" font-family="sans-serif" font-size="12">Successful: measured</text>
+<polyline points="134.99,387.48 187.97,376.76 241.01,366.02 294.00,355.30 346.99,344.58 400.03,333.84 453.01,323.12 506.00,312.40 558.99,301.68 611.97,290.96 665.01,280.22 718.00,269.50 770.99,258.78 824.03,248.04 877.01,237.32 930.00,226.60" fill="none" stroke="#1769aa" stroke-width="2.5" stroke-dasharray="7 5"/>
+<line x1="100" y1="95" x2="130" y2="95" stroke="#1769aa" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="137" y="99" font-family="sans-serif" font-size="12">Successful: theory</text>
+<polyline points="134.99,459.85 187.97,442.19 241.01,418.75 294.00,397.70 346.99,376.31 400.03,356.26 453.01,332.87 506.00,313.89 558.99,289.06 611.97,271.85 665.01,245.85 718.00,225.43 770.99,205.42 824.03,184.75 877.01,158.25 930.00,140.11" fill="none" stroke="#d1495b" stroke-width="2.5"/>
+<line x1="100" y1="117" x2="130" y2="117" stroke="#d1495b" stroke-width="2.5"/>
+<text x="137" y="121" font-family="sans-serif" font-size="12">Unsuccessful: measured</text>
+<polyline points="134.99,462.56 187.97,441.11 241.01,419.64 294.00,398.20 346.99,376.76 400.03,355.29 453.01,333.84 506.00,312.40 558.99,290.96 611.97,269.51 665.01,248.04 718.00,226.60 770.99,205.16 824.03,183.69 877.01,162.24 930.00,140.80" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<line x1="100" y1="139" x2="130" y2="139" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="137" y="143" font-family="sans-serif" font-size="12">Unsuccessful: theory</text>
+</svg>
