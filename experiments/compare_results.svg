@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700">
+<title>Chaining and linear probing search cost comparison</title>
+<desc>Measured average comparisons and slot visits compared with theoretical estimates for successful and unsuccessful searches on a logarithmic vertical scale.</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="700.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="21">Chaining vs linear probing: measured and theoretical costs</text>
+<line x1="82" y1="63" x2="112" y2="63" stroke="#1769aa" stroke-width="2.5"/>
+<text x="120" y="67" font-family="sans-serif" font-size="12">Chaining success: measured</text>
+<line x1="402" y1="63" x2="432" y2="63" stroke="#1769aa" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="440" y="67" font-family="sans-serif" font-size="12">Chaining success: theory</text>
+<line x1="722" y1="63" x2="752" y2="63" stroke="#d1495b" stroke-width="2.5"/>
+<text x="760" y="67" font-family="sans-serif" font-size="12">Chaining failure: measured</text>
+<line x1="1042" y1="63" x2="1072" y2="63" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="1080" y="67" font-family="sans-serif" font-size="12">Chaining failure: theory</text>
+<line x1="82" y1="85" x2="112" y2="85" stroke="#27864b" stroke-width="2.5"/>
+<text x="120" y="89" font-family="sans-serif" font-size="12">Linear success: measured</text>
+<line x1="402" y1="85" x2="432" y2="85" stroke="#27864b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="440" y="89" font-family="sans-serif" font-size="12">Linear success: theory</text>
+<line x1="722" y1="85" x2="752" y2="85" stroke="#8b5aa8" stroke-width="2.5"/>
+<text x="760" y="89" font-family="sans-serif" font-size="12">Linear failure: measured</text>
+<line x1="1042" y1="85" x2="1072" y2="85" stroke="#8b5aa8" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="1080" y="89" font-family="sans-serif" font-size="12">Linear failure: theory</text>
+<line x1="82" y1="596.12" x2="1365" y2="596.12" stroke="#dddddd"/>
+<text x="70" y="601.12" text-anchor="end" font-family="sans-serif" font-size="12">0.1</text>
+<line x1="82" y1="548.55" x2="1365" y2="548.55" stroke="#dddddd"/>
+<text x="70" y="553.55" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="82" y1="485.65" x2="1365" y2="485.65" stroke="#dddddd"/>
+<text x="70" y="490.65" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<line x1="82" y1="438.08" x2="1365" y2="438.08" stroke="#dddddd"/>
+<text x="70" y="443.08" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<line x1="82" y1="390.51" x2="1365" y2="390.51" stroke="#dddddd"/>
+<text x="70" y="395.51" text-anchor="end" font-family="sans-serif" font-size="12">2</text>
+<line x1="82" y1="327.61" x2="1365" y2="327.61" stroke="#dddddd"/>
+<text x="70" y="332.61" text-anchor="end" font-family="sans-serif" font-size="12">5</text>
+<line x1="82" y1="280.04" x2="1365" y2="280.04" stroke="#dddddd"/>
+<text x="70" y="285.04" text-anchor="end" font-family="sans-serif" font-size="12">10</text>
+<line x1="82" y1="232.47" x2="1365" y2="232.47" stroke="#dddddd"/>
+<text x="70" y="237.47" text-anchor="end" font-family="sans-serif" font-size="12">20</text>
+<line x1="82" y1="169.57" x2="1365" y2="169.57" stroke="#dddddd"/>
+<text x="70" y="174.57" text-anchor="end" font-family="sans-serif" font-size="12">50</text>
+<line x1="82" y1="122.00" x2="1365" y2="122.00" stroke="#dddddd"/>
+<text x="70" y="127.00" text-anchor="end" font-family="sans-serif" font-size="12">100</text>
+<line x1="82.00" y1="122" x2="82.00" y2="624" stroke="#eeeeee"/>
+<text x="82.00" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.1</text>
+<line x1="242.38" y1="122" x2="242.38" y2="624" stroke="#eeeeee"/>
+<text x="242.38" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="402.75" y1="122" x2="402.75" y2="624" stroke="#eeeeee"/>
+<text x="402.75" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.3</text>
+<line x1="563.12" y1="122" x2="563.12" y2="624" stroke="#eeeeee"/>
+<text x="563.12" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.4</text>
+<line x1="723.50" y1="122" x2="723.50" y2="624" stroke="#eeeeee"/>
+<text x="723.50" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.5</text>
+<line x1="883.88" y1="122" x2="883.88" y2="624" stroke="#eeeeee"/>
+<text x="883.88" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.6</text>
+<line x1="1044.25" y1="122" x2="1044.25" y2="624" stroke="#eeeeee"/>
+<text x="1044.25" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.7</text>
+<line x1="1204.62" y1="122" x2="1204.62" y2="624" stroke="#eeeeee"/>
+<text x="1204.62" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<line x1="1365.00" y1="122" x2="1365.00" y2="624" stroke="#eeeeee"/>
+<text x="1365.00" y="646" text-anchor="middle" font-family="sans-serif" font-size="12">0.9</text>
+<line x1="82" y1="122" x2="82" y2="624" stroke="#333"/>
+<line x1="82" y1="624" x2="1365" y2="624" stroke="#333"/>
+<text x="723.50" y="682" text-anchor="middle" font-family="sans-serif" font-size="14">Load factor (α)</text>
+<text x="20" y="373.00" transform="rotate(-90 20 373.00)" text-anchor="middle" font-family="sans-serif" font-size="14">Average comparisons / slots visited (log scale)</text>
+<polyline points="81.88,433.85 242.53,430.62 402.79,426.72 563.05,424.20 723.30,421.29 883.95,418.37 1044.21,415.48 1204.47,412.93 1365.12,410.70" fill="none" stroke="#1769aa" stroke-width="2.5"/>
+<polyline points="81.88,434.73 242.53,431.54 402.79,428.49 563.05,425.57 723.30,422.77 883.95,420.07 1044.21,417.48 1204.47,414.99 1365.12,412.58" fill="none" stroke="#1769aa" stroke-width="2.5" stroke-dasharray="7 5"/>
+<polyline points="81.88,592.78 242.53,549.83 402.79,520.65 563.05,500.24 723.30,485.25 883.95,475.75 1044.21,460.86 1204.47,454.32 1365.12,443.66" fill="none" stroke="#d1495b" stroke-width="2.5"/>
+<polyline points="81.88,596.17 242.53,548.51 402.79,520.71 563.05,500.98 723.30,485.67 883.95,473.14 1044.21,462.56 1204.47,453.40 1365.12,445.31" fill="none" stroke="#d1495b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<polyline points="81.88,433.22 242.53,428.48 402.79,422.54 563.05,416.80 723.30,406.74 883.95,394.11 1044.21,380.96 1204.47,358.78 1365.12,331.05" fill="none" stroke="#27864b" stroke-width="2.5"/>
+<polyline points="81.88,434.37 242.53,429.99 402.79,424.75 563.05,418.34 723.30,410.26 883.95,399.66 1044.21,385.02 1204.47,362.70 1365.12,321.03" fill="none" stroke="#27864b" stroke-width="2.5" stroke-dasharray="7 5"/>
+<polyline points="81.88,430.23 242.53,420.41 402.79,409.27 563.05,393.43 723.30,372.03 883.95,350.20 1044.21,315.21 1204.47,270.00 1365.12,201.48" fill="none" stroke="#8b5aa8" stroke-width="2.5"/>
+<polyline points="81.88,430.47 242.53,421.06 402.79,409.32 563.05,394.44 723.30,375.22 883.95,349.67 1044.21,314.48 1204.47,262.10 1365.12,168.79" fill="none" stroke="#8b5aa8" stroke-width="2.5" stroke-dasharray="7 5"/>
+</svg>
